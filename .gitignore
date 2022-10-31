@@ -25,4 +25,5 @@ hs_err_pid*
 # .idea folder
 /.idea
 
-#
+# target folder
+/target
