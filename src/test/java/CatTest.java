@@ -17,23 +17,17 @@ public class CatTest {
 
     @Test
     public void getSoundSuccess() {
-        //Arrange
         Cat cat = new Cat(feline);
         String expected = "Мяу";
-        //Act
         String actual = cat.getSound();
-        //Assert
         Assert.assertEquals("Cat is not mewing!", expected, actual);
     }
 
     @Test
     public void getFoodSuccess() throws Exception {
-        //Arrange
         Cat cat = new Cat(feline);
         List<String> expected = new LinkedList<>();
-        //Act
         List<String> actual = cat.getFood();
-        //Assert
         Assert.assertEquals("Object class is not expected!", expected.getClass(), actual.getClass());
     }
 
